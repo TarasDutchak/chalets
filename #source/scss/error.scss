@@ -1,0 +1,88 @@
+.screenheightsect.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 60px;
+    min-height: 650px;
+
+    h1 {
+        margin-bottom: 15px;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-weight: 800;
+        font-size: 220px;
+        line-height: 130%;
+    }
+
+    .bigtext {
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+        color: #F8F8F8;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 130%;
+        margin-bottom: 25px;
+    }
+
+    p {
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+        color: #F8F8F8;
+        font-size: 20px;
+        line-height: 130%;
+        margin-bottom: 40px;
+    }
+
+    .yellowbtn {
+        width: 179px;
+    }
+
+
+
+
+
+
+}
+
+@media(max-width:1600.8px) {
+    .screenheightsect.error h1 {
+        font-size: 160px;
+        line-height: 110%;
+    }
+
+    .screenheightsect.error .bigtext {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .screenheightsect.error p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .screenheightsect.error h1 {
+        font-size: 110px;
+    }
+
+    .screenheightsect.error .bigtext {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .screenheightsect.error {
+        min-height: 550px;
+    }
+
+    .screenheightsect {
+        height: calc(100vh - 70px);
+    }
+
+
+
+
+}

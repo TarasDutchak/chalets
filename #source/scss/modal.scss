@@ -1,0 +1,215 @@
+.bookmodal {
+    .modal-dialog {
+        max-width: 1362px;
+    }
+
+    .modal-content {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .imgwrap {
+        height: 600px;
+        min-height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .modalinfo {
+        background: linear-gradient(93.9deg, #202020 0.29%, #4A4A4A 100%);
+        height: 100%;
+        padding: 60px 60px 60px 85px;
+        position: relative;
+
+        .title {
+            margin-bottom: 30px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 56px;
+            line-height: 130%;
+        }
+
+        .descr {
+            color: rgba(238, 238, 238, 0.7);
+            font-size: 20px;
+            line-height: 127%;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 434px;
+            position: relative;
+            z-index: 3;
+
+            input {
+                width: 100%;
+                background: transparent;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid #625B53;
+                margin-bottom: 20px;
+                color: #fff;
+                transition: 0.3s;
+                font-size: 14px;
+                text-transform: uppercase;
+                height: 38px;
+
+                &::placeholder {
+                    color: rgba(238, 238, 238, 0.7);
+                }
+
+                &:focus {
+                    border-bottom: 2px solid #fff;
+                }
+            }
+
+            .yellowbtn {
+                margin-top: 40px;
+                border: none;
+            }
+
+            .inputfield {
+                position: relative;
+                
+                .datelabel {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 90%;
+            height: 309px;
+            background: url('../img/modalpic.png') no-repeat left bottom / auto;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+
+
+    }
+
+    .closemodal {
+        position: absolute;
+        right: 27px;
+        top: 27px;
+        background: transparent;
+        padding: 0;
+        border: none;
+        outline: none;
+
+        img {
+            width: 35px;
+        }
+    }
+
+
+}
+
+@media(max-width:1399.8px) {
+    .bookmodal .modal-dialog {
+        max-width: 1100px;
+    }
+
+    .bookmodal .modalinfo .title {
+        font-size: 36px;
+    }
+
+    .bookmodal .modalinfo .descr {
+        font-size: 16px;
+    }
+
+    .bookmodal .imgwrap {
+        height: 540px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .bookmodal .modal-dialog {
+        max-width: 900px;
+    }
+
+    .bookmodal .modalinfo {
+        padding: 60px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .bookmodal .modal-dialog {
+        max-width: 700px;
+    }
+
+    .bookmodal .closemodal img {
+        width: 30px;
+    }
+
+    .bookmodal .closemodal {
+        right: 20px;
+        top: 20px;
+    }
+
+    .bookmodal .modalinfo {
+        padding: 40px;
+    }
+
+    .bookmodal .closemodal {
+        z-index: 2;
+    }
+}
+
+@media(max-width:767.8px) {
+    .bookmodal .imgwrap {
+        display: none;
+    }
+
+    .bookmodal .modal-dialog {
+        max-width: 90%;
+    }
+
+    .bookmodal .modalinfo form {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:575.8px) {
+    .bookmodal .modal-dialog {
+        max-width: 100%;
+    }
+
+    .bookmodal .modalinfo .title {
+        font-size: 28px;
+    }
+
+    .bookmodal .modalinfo {
+        padding: 30px;
+    }
+
+    .bookmodal .modalinfo:after {
+        width: 100%;
+        height: 190px;
+        background-size: 100% auto;
+    }
+
+    .bookmodal .modalinfo form .yellowbtn {
+        width: 100%;
+    }
+
+    .bookmodal .closemodal {
+        img {
+            width: 24px;
+        }
+    }
+
+
+}
