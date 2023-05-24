@@ -6,19 +6,19 @@
     align-items: center;
     justify-content: center;
 
-    &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: linear-gradient(194.26deg, #3D3C3C 10.13%, rgba(61, 60, 60, 0.6) 51.16%, rgba(195, 230, 255, 0) 89.87%);
-        z-index: 1;
-        mix-blend-mode: multiply;
-        transform: matrix(1, 0, 0, -1, 0, 0);
-    }
+    // &::after {
+    //     content: '';
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    //     background: linear-gradient(194.26deg, #3D3C3C 10.13%, rgba(61, 60, 60, 0.6) 51.16%, rgba(195, 230, 255, 0) 89.87%);
+    //     z-index: 1;
+    //     mix-blend-mode: multiply;
+    //     transform: matrix(1, 0, 0, -1, 0, 0);
+    // }
 
     .welcomescreen__bg {
         position: absolute;
