@@ -394,7 +394,7 @@
     padding: 27px 27px 39px 27px;
     background: url('../img/mountpromo.png') no-repeat bottom right / auto;
 
-    .date {
+    .datep {
         text-align: right;
         text-transform: uppercase;
         color: rgba(238, 238, 238, 0.7);
@@ -410,6 +410,8 @@
         font-size: 32px;
         line-height: 130%;
         margin-bottom: 88px;
+        display: block;
+        text-decoration: none;
 
         span {
             background: linear-gradient(176.76deg, #DBA104 2.67%, #ECC65F 97.32%);
@@ -1161,7 +1163,7 @@
         font-size: 24px;
     }
 
-    .promobox .date {
+    .promobox .datep {
         margin-bottom: 30px;
     }
 
