@@ -957,6 +957,15 @@
     img {
         width: 100%;
     }
+
+    &>div {
+        width: 100% !important;
+
+        iframe {
+            vertical-align: top;
+            width: 100%;
+        }
+    }
 }
 
 .contacts__descr {
@@ -1182,9 +1191,9 @@
         margin-bottom: 40px;
     }
 
-    .contmap {
-        height: 280px;
-    }
+    // .contmap {
+    //     height: 280px;
+    // }
 
 
 

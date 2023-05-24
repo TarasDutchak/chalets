@@ -142,6 +142,24 @@
         }
     }
 
+    .tyinfo {
+        text-align: center;
+    }
 
+    .soctextlist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .tyinfo ul.soctextlist li a img {
+        margin-right: 2px;
+    }
 
+}
+
+@media(max-width:360.8px) {
+    .tyinfo ul.soctextlist li {
+        width: 100%;
+    }
 }
