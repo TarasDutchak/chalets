@@ -95,7 +95,7 @@
                                     <li>Sherwood Chalet</li>
                                 </ul>
                                 <a href="#" class="booklink" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">ЗАБРОНЮВАТИ</a>
+                                    data-bs-target="#staticBackdrop">ЗАБРОНЮВАТИ</a>
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-4">
@@ -141,10 +141,23 @@
                                 <div class="inputfield">
                                     <input type="tel" class="telinput" placeholder="+38(0хх) ххх хх хх">
                                 </div>
-                                <div class="inputfield">
-                                    <input type="text" class="date" id="date" placeholder="дата">
-                                    <label class="datelabel" for="date"><img src="img/calendar-icon.svg"
-                                            alt="icon"></label>
+                                <!-- <div class="inputfield">
+                                <input type="text" class="date" id="date" placeholder="дата">
+                                <label class="datelabel" for="date"><img src="img/calendar-icon.svg"
+                                        alt="icon"></label>
+                            </div> -->
+
+                                <div class="inputfield flexrow">
+                                    <div class="coldate">
+                                        <input type="text" class="datepick1" id="date1" placeholder="Дата заїзду">
+                                        <label class="datelabel" for="date1"><img src="img/calendar-icon.svg"
+                                                alt="icon"></label>
+                                    </div>
+                                    <div class="coldate">
+                                        <input type="text" class="datepick2" id="date2" placeholder="Дата виїзду">
+                                        <label class="datelabel" for="date2"><img src="img/calendar-icon.svg"
+                                                alt="icon"></label>
+                                    </div>
                                 </div>
 
                                 <button class="yellowbtn" type="submit">ЗАБРОНЮВАТИ</button>

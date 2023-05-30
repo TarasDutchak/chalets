@@ -19,12 +19,12 @@ $(document).ready(function () {
                 slidesPerView: 1.1,
                 spaceBetween: 10,
             },
-            
+
             575: {
                 slidesPerView: 1.5,
                 spaceBetween: 30,
             },
-          },
+        },
     });
     var swiper = new Swiper(".benefit2", {
         slidesPerView: 1.5,
@@ -43,12 +43,12 @@ $(document).ready(function () {
                 slidesPerView: 1.1,
                 spaceBetween: 10,
             },
-            
+
             575: {
                 slidesPerView: 1.5,
                 spaceBetween: 30,
             },
-          },
+        },
     });
     var swiper = new Swiper(".benefit3", {
         slidesPerView: 1.5,
@@ -67,12 +67,12 @@ $(document).ready(function () {
                 slidesPerView: 1.1,
                 spaceBetween: 10,
             },
-            
+
             575: {
                 slidesPerView: 1.5,
                 spaceBetween: 30,
             },
-          },
+        },
     });
 
     // container space
@@ -128,7 +128,7 @@ $(document).ready(function () {
 
 
     // our photo
- 
+
     var swiper1 = new Swiper(".ourphotosl", {
         slidesPerView: 1.8,
         spaceBetween: 30,
@@ -148,11 +148,11 @@ $(document).ready(function () {
             575: {
                 slidesPerView: 1.3,
             },
-            
+
             991: {
                 slidesPerView: 1.8,
             },
-          },
+        },
 
 
     });
@@ -173,18 +173,18 @@ $(document).ready(function () {
         showMaskOnHover: false,
         showMaskOnFocus: false,
     });
-    
-    
+
+
 
     // faq
-    $('.faqsectrow__header').click(function(){
+    $('.faqsectrow__header').click(function () {
         $(this).next('.faqsectrow__body').slideToggle();
         $(this).toggleClass('active');
     });
 
-     //   to top
+    //   to top
 
-     $(function () {
+    $(function () {
         $('.footer__up a').click(function () {
             $('html, body').animate({
                 scrollTop: 0
@@ -195,7 +195,7 @@ $(document).ready(function () {
     });
 
     // клік - пункт меню - ховаєм меню
-    $('.header__nav ul li a').click(function(e){
+    $('.header__nav ul li a').click(function (e) {
         e.preventDefault();
         $('.mobmenu').removeClass('show');
         $('header.header').removeClass('active');
@@ -224,19 +224,38 @@ $(document).ready(function () {
         $('body,html').animate({ scrollTop: top }, 1500);
     });
 
-    
+
 
 
 
 
     // Бургер меню - клік
-    $('.menubtn').click(function(){
+    $('.menubtn').click(function () {
         $('header.header').toggleClass('active');
         $('.mobmenu').toggleClass('show');
     });
 
-    
+
+    // // datepicker
+    const picker1 = datepicker('.datepick1', {
+        formatter: (input, date, instance) => {
+            const value = date.toLocaleDateString()
+            input.value = value // => '1/1/2099'
+        },
+        customDays: ['Пн', 'Вт', 'Сп', 'Чт', 'Пт', 'Сб', 'Нд'],
+        customMonths: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
+    })
+    const picker2 = datepicker('.datepick2', {
+        formatter: (input, date, instance) => {
+            const value = date.toLocaleDateString()
+            input.value = value // => '1/1/2099'
+        },
+        customDays: ['Пн', 'Вт', 'Сп', 'Чт', 'Пт', 'Сб', 'Нд'],
+        customMonths: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
+    })
 
 
+   
+ 
 
 });

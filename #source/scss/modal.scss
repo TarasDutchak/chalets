@@ -5,7 +5,7 @@
 
     .modal-content {
         border-radius: 10px;
-        overflow: hidden;
+        // overflow: hidden;
     }
 
     .imgwrap {
@@ -116,6 +116,20 @@
 
 }
 
+.inputfield.flexrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .coldate {
+        flex: 0 0 auto;
+        width: calc(50% - 10px);
+        position: relative;
+    }
+}
+
+
+
 @media(max-width:1399.8px) {
     .bookmodal .modal-dialog {
         max-width: 1100px;
@@ -211,5 +225,8 @@
         }
     }
 
+    .inputfield.flexrow .coldate {
+        width: 100%;
+    }
 
 }

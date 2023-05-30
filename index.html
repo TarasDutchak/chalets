@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/lib/swiper.css">
     <link rel="stylesheet" href="css/lib/fancybox.css" />
     <link rel="stylesheet" href="css/lib/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -1050,6 +1051,7 @@
             </a>
         </footer>
     </div>
+
     <div class="modal fade bookmodal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -1073,11 +1075,24 @@
                                 <div class="inputfield">
                                     <input type="tel" class="telinput" placeholder="+38(0хх) ххх хх хх">
                                 </div>
-                                <div class="inputfield">
+                                <!-- <div class="inputfield">
                                     <input type="text" class="date" id="date" placeholder="дата">
                                     <label class="datelabel" for="date"><img src="img/calendar-icon.svg"
                                             alt="icon"></label>
-                                </div>
+                                </div> -->
+                                
+                               <div class="inputfield flexrow">
+                                    <div class="coldate">
+                                        <input type="text" class="datepick1" id="date1" placeholder="Дата заїзду">
+                                        <label class="datelabel" for="date1"><img src="img/calendar-icon.svg"
+                                            alt="icon"></label>
+                                    </div>
+                                    <div class="coldate">
+                                        <input type="text" class="datepick2" id="date2" placeholder="Дата виїзду">
+                                        <label class="datelabel" for="date2"><img src="img/calendar-icon.svg"
+                                            alt="icon"></label>
+                                    </div>
+                               </div>
 
                                 <button class="yellowbtn" type="submit">ЗАБРОНЮВАТИ</button>
                             </form>
@@ -1100,6 +1115,7 @@
     <script src="js/lib/fancybox.js"></script>
     <script src="js/lib/jquery.inputmask.min.js"></script>
     <script src="js/lib/aos.js"></script>
+    <script src="https://unpkg.com/js-datepicker"></script>
     <script src="js/main.js"></script>
 </body>
 
