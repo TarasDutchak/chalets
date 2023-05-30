@@ -242,7 +242,7 @@ $(document).ready(function () {
             const value = date.toLocaleDateString()
             input.value = value // => '1/1/2099'
         },
-        customDays: ['Пн', 'Вт', 'Сп', 'Чт', 'Пт', 'Сб', 'Нд'],
+        customDays: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'],
         customMonths: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
     })
     const picker2 = datepicker('.datepick2', {
@@ -250,7 +250,7 @@ $(document).ready(function () {
             const value = date.toLocaleDateString()
             input.value = value // => '1/1/2099'
         },
-        customDays: ['Пн', 'Вт', 'Сп', 'Чт', 'Пт', 'Сб', 'Нд'],
+        customDays: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'],
         customMonths: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
     })
 
