@@ -308,6 +308,11 @@
                 margin-bottom: 0;
             }
         }
+
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 }
 
@@ -1322,9 +1327,16 @@
         padding: 20px 0 30px;
     }
 
+    .benefit__slidertext .descr {
+        display: block;
+        -webkit-line-clamp: inherit;
+        -webkit-box-orient: inherit;
+        overflow: visible;
+    }
 
-
-
+    .benefit__slider:after {
+        height: calc(100% - 50px);
+    }
 
 
 
@@ -1421,7 +1433,7 @@
     }
 
     .aboutsectbox.text p {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .aboutsectbox.info {
@@ -1554,9 +1566,14 @@
         }
     }
 
+    .aboutsectbox.text .aboutsectbox__wrapper {
+        // display: block;
+        padding: 15px;
+    }
 
-
-
+    .aboutsectbox.text p {
+        font-size: 19px;
+    }
 
 
 
