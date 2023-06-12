@@ -1075,6 +1075,16 @@
     margin-bottom: 0;
 }
 
+.promobox__wrapper {
+    .yellowbtn {
+        display: flex;
+        margin: 20px auto 0;
+        max-width: 100%;
+    }
+}
+
+
+
 @media(max-width:1399.8px) {
     .aboutsectbox {
         height: 280px;
