@@ -195,15 +195,15 @@ $(document).ready(function () {
     });
 
     // клік - пункт меню - ховаєм меню
-    $('.header__nav ul li a').click(function (e) {
-        e.preventDefault();
+    $('.header__nav .menu-golovne-menyu-container ul li a').click(function (e) {
+        // e.preventDefault();
         $('.mobmenu').removeClass('show');
         $('header.header').removeClass('active');
 
     });
 
     // Скрол по секціям
-    $(".header__nav ul").on("click", "a", function (event) {
+    $(".header__nav .menu-golovne-menyu-container ul").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top - 100;
@@ -242,7 +242,8 @@ $(document).ready(function () {
             const value = date.toLocaleDateString()
             input.value = value // => '1/1/2099'
         },
-        customDays: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'],
+        startDay: 1,
+        customDays: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
         customMonths: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
     })
     const picker2 = datepicker('.datepick2', {
@@ -250,7 +251,8 @@ $(document).ready(function () {
             const value = date.toLocaleDateString()
             input.value = value // => '1/1/2099'
         },
-        customDays: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'],
+        startDay: 1,
+        customDays: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
         customMonths: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
     })
 
