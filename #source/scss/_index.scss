@@ -1083,6 +1083,15 @@
     }
 }
 
+.shalesect__slsect .borderbtn {
+    display: none;
+}
+
+.shalesect__info .dates ul li .oldprice {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #b98d17;
+}
 
 
 @media(max-width:1399.8px) {
@@ -1366,6 +1375,9 @@
         margin-top: 20px;
     }
 
+    .shalesect__slsect .borderbtn {
+        display: inline-flex;
+    }
 
 
 
@@ -1601,7 +1613,9 @@
         font-size: 19px;
     }
 
-
+    .shalesect__info .dates ul li .oldprice {
+        font-size: 14px;
+    }
 
 
 
