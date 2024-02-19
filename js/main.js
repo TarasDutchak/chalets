@@ -118,6 +118,10 @@ $(document).ready(function () {
             el: ".swiper-pagination.sl4",
             clickable: true,
         },
+        navigation: {
+            nextEl: ".swiper-button-next.ifarr",
+            prevEl: ".swiper-button-prev.ifarr",
+          },
 
     });
 

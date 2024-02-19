@@ -1370,7 +1370,7 @@
     .shalesect__info .borderbtn {
         display: none;
     }
-    
+
     .shalesect__slsect .borderbtn {
         margin-top: 20px;
     }
@@ -1661,4 +1661,36 @@
         padding-top: 50px;
     }
 
+}
+
+
+
+
+.swiper-slide iframe {
+    width: 100%;
+    height: 101%;
+}
+
+.swiper-button-next.ifarr,
+.swiper-button-prev.ifarr {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(219, 161, 4, 0.3);
+}
+
+.swiper-button-next.ifarr:after,
+.swiper-button-prev.ifarr:after {
+    color: #DBA104;
+    font-size: 24px;
+}
+
+@media(max-width:575.8px) {
+    .swiper-button-next.ifarr {
+        right: 0;
+    }
+
+    .swiper-button-prev.ifarr {
+        left: 0;
+    }
 }
