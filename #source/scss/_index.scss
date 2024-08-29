@@ -1694,7 +1694,7 @@
 .textmodal {
     .modal-content {
         padding: 40px 20px 20px 20px;
-        background: linear-gradient(93.9deg,#202020 0.29%,#4A4A4A 100%);
+        background: linear-gradient(93.9deg, #202020 0.29%, #4A4A4A 100%);
     }
 
     .closemodal {
@@ -1726,7 +1726,7 @@
     .modal-dialog {
         max-width: 600px;
     }
-    
+
 }
 
 
@@ -1738,4 +1738,158 @@
     .swiper-button-prev.ifarr {
         left: 0;
     }
+}
+
+
+// --------------------------------------
+.ourshale.ourshale__loc {
+    position: relative;
+    padding-top: 135px;
+    padding-bottom: 155px;
+
+    .ourshale__loc_bgel {
+        position: absolute;
+        right: 70px;
+        bottom: 0;
+        max-width: 100%;
+    }
+
+    .shalesects {
+        position: relative;
+        z-index: 1;
+    }
+
+    &::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 0 10px 10px 0;
+        background: linear-gradient(100deg, #202020, #4A4A4A);
+        width: calc(100% - 70px);
+        height: 100%;
+    }
+
+    .sectiontitle {
+        color: #fff;
+    }
+
+    h3 {
+        color: #fff;
+        padding-right: 40px;
+    }
+
+    .shalesect__info .dates ul {
+        margin-bottom: 15px;
+    }
+
+    .shalesect__info .dates p {
+        font-size: 20px;
+    }
+
+    .ourshale__locbtns {
+        a {
+            text-transform: uppercase;
+            margin-right: 20px;
+            width: 202px;
+
+            &.yellowbtn {
+                border: none;
+                box-shadow: none;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .shalesect .shalesect__wrap .shalesect__info {
+        width: 50%;
+    }
+
+    .shalesect .shalesect__wrap .shalesect__slsect {
+        width: 50%;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: rgba(219, 161, 4, 0.3);
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        color: #DBA104;
+        font-size: 24px;
+    }
+
+  .ourshale__locbtns.mob {
+        display: none;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .ourshale.ourshale__loc .shalesect .shalesect__wrap .shalesect__info {
+        width: 100%;
+    }
+
+    .ourshale.ourshale__loc .shalesect .shalesect__wrap .shalesect__slsect {
+        width: 100%;
+    }
+
+    .ourshale__locbtns {
+        display: none;
+
+        &.mob {
+            display: block;
+        }
+    }
+
+    .ourshale.ourshale__loc:after {
+        width: calc(100% - 40px);
+    }
+
+    .ourshale.ourshale__loc .ourshale__loc_bgel {
+        right: 40px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .promosection {
+        margin-bottom: 50px;
+    }
+
+    .ourshale.ourshale__loc {
+        padding-top: 70px;
+    }
+
+    .ourshale.ourshale__loc:after {
+        width: calc(100% - 30px);
+    }
+
+    .ourshale.ourshale__loc .ourshale__locbtns.mob {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+
+        a {
+            width: 48%;
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+
+    .ourshale.ourshale__loc .ourshale__loc_bgel {
+        right: 30px;
+    }
+
+    .ourshale.ourshale__loc .shalesect__info .dates p {
+        font-size: 16px;
+    }
+
 }

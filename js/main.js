@@ -119,9 +119,9 @@ $(document).ready(function () {
             clickable: true,
         },
         navigation: {
-            nextEl: ".swiper-button-next.ifarr",
-            prevEl: ".swiper-button-prev.ifarr",
-          },
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
 
     });
 
@@ -241,27 +241,40 @@ $(document).ready(function () {
 
 
     // // datepicker
-    const picker1 = datepicker('.datepick1', {
-        formatter: (input, date, instance) => {
-            const value = date.toLocaleDateString()
-            input.value = value // => '1/1/2099'
-        },
-        startDay: 1,
-        customDays: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-        customMonths: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
-    })
-    const picker2 = datepicker('.datepick2', {
-        formatter: (input, date, instance) => {
-            const value = date.toLocaleDateString()
-            input.value = value // => '1/1/2099'
-        },
-        startDay: 1,
-        customDays: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-        customMonths: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
-    })
+    if ($('.datepick1').length > 0) {
+        const picker1 = datepicker('.datepick1', {
+            formatter: (input, date, instance) => {
+                const value = date.toLocaleDateString()
+                input.value = value // => '1/1/2099'
+            },
+            startDay: 1,
+            customDays: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+            customMonths: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
+        })
+    }
+    if ($('.datepick2').length > 0) {
+        const picker2 = datepicker('.datepick2', {
+            formatter: (input, date, instance) => {
+                const value = date.toLocaleDateString()
+                input.value = value // => '1/1/2099'
+            },
+            startDay: 1,
+            customDays: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+            customMonths: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
+        })
+    }
 
 
-   
- 
+
+    //    ------------------------------------------------------
+    $('.morelessbtn').click(function () {
+        $(this).toggleClass('active');
+        $(this).find('span').toggle();
+        $(this).parent('.includewrapper').find('.includelist').toggleClass('active');
+    })
+
+    $('.modalgive .closemodal').click(function(){
+        $('.modalgivewrapper').hide();
+    })
 
 });
