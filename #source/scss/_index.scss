@@ -1379,7 +1379,7 @@
         display: inline-flex;
     }
 
-   
+
 
 
     .aboutsectbox.text p {
@@ -1826,9 +1826,13 @@
         font-size: 24px;
     }
 
-  .ourshale__locbtns.mob {
+    .ourshale__locbtns.mob {
         display: none;
     }
+}
+
+.ourshale__locbtns.mob {
+    display: none;
 }
 
 @media(max-width:991.8px) {
@@ -1857,7 +1861,8 @@
         right: 40px;
     }
 
-    .ourshale.ourshale__loc .ourshale__locbtns.mob {
+    .ourshale.ourshale__loc .ourshale__locbtns.mob,
+    .ourshale__locbtns.mob {
         display: flex;
         flex-wrap: wrap;
 
@@ -1876,7 +1881,6 @@
             }
         }
     }
-
 
 }
 
