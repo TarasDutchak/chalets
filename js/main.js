@@ -207,7 +207,7 @@ $(document).ready(function () {
     });
 
     // Скрол по секціям
-    $(".header__nav .menu-golovne-menyu-container ul").on("click", "a", function (event) {
+    $("body:not(.noscrollmenu) .header__nav .menu-golovne-menyu-container ul").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top - 100;

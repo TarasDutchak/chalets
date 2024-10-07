@@ -1379,7 +1379,7 @@
         display: inline-flex;
     }
 
-
+   
 
 
     .aboutsectbox.text p {
@@ -1856,6 +1856,27 @@
     .ourshale.ourshale__loc .ourshale__loc_bgel {
         right: 40px;
     }
+
+    .ourshale.ourshale__loc .ourshale__locbtns.mob {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+
+            &:nth-child(1) {
+                order: 2;
+            }
+
+            &:nth-child(2) {
+                order: 1;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
 
 }
 
