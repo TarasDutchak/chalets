@@ -200,14 +200,13 @@ $(document).ready(function () {
 
     // клік - пункт меню - ховаєм меню
     $('.header__nav .menu-golovne-menyu-container > ul > li > a:not(.noscrollmenu)').click(function (e) {
-        // e.preventDefault();
         $('.mobmenu').removeClass('show');
         $('header.header').removeClass('active');
 
     });
 
     // Скрол по секціям noscrollmenu
-    $(".header__nav .menu-golovne-menyu-container > ul").on("click", "a:not(.noscrollmenu)", function (event) {
+    $(".header__nav .menu-golovne-menyu-container > ul > li > a").click(function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top - 100;
