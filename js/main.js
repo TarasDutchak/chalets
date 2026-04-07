@@ -199,20 +199,25 @@ $(document).ready(function () {
     });
 
     // клік - пункт меню - ховаєм меню
-    $('.header__nav .menu-golovne-menyu-container ul li a').click(function (e) {
+    $('.header__nav .menu-golovne-menyu-container > ul > li > a:not(.noscrollmenu)').click(function (e) {
         // e.preventDefault();
         $('.mobmenu').removeClass('show');
         $('header.header').removeClass('active');
 
     });
 
-    // Скрол по секціям
-    $("body:not(.noscrollmenu) .header__nav .menu-golovne-menyu-container ul").on("click", "a", function (event) {
+    // Скрол по секціям noscrollmenu
+    $(".header__nav .menu-golovne-menyu-container > ul").on("click", "a:not(.noscrollmenu)", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top - 100;
         $('body,html').animate({ scrollTop: top }, 1500);
     });
+
+    $('.header__nav .menu-golovne-menyu-container ul a.noscrollmenu').click(function (e) {
+        e.preventDefault();
+        $(this).next($('.dropdown-menu')).toggleClass('show');
+    })
 
     $(".tobtn").on("click", function (event) {
         event.preventDefault();
@@ -273,8 +278,17 @@ $(document).ready(function () {
         $(this).parent('.includewrapper').find('.includelist').toggleClass('active');
     })
 
-    $('.modalgive .closemodal').click(function(){
+    $('.modalgive .closemodal').click(function () {
         $('.modalgivewrapper').hide();
     })
+
+
+
+
+
+
+
+
+
 
 });
