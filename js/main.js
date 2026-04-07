@@ -206,8 +206,8 @@ $(document).ready(function () {
     });
 
     // Скрол по секціям noscrollmenu
-    $(".header__nav .menu-golovne-menyu-container > ul > li > a").click(function (event) {
-        event.preventDefault();
+    $(".header__nav .menu-golovne-menyu-container > ul > li > a:not(.noscrollmenu)").click(function (event) {
+        // event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top - 100;
         $('body,html').animate({ scrollTop: top }, 1500);
